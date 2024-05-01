@@ -1,0 +1,32 @@
+.subscribe {
+  margin-bottom: 40px;
+}
+
+.subscribe__title {
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.subscribe__label {
+  display: block;
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 24px;
+  color: $basic-black;
+  text-align: center;
+}
+
+.subscribe__input {
+  width: 100%;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 13px;
+  font-family: $title-font;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 1px solid $basic-normal-grey;
+}

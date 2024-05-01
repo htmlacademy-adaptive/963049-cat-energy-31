@@ -1,0 +1,29 @@
+.gift-for-cat__wrap {
+  display: block;
+  min-height: 290px;
+  background-size: 280 290;
+  background-image: url("../../../images/additional-bg-gift-img-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $basic-green;
+}
+
+.gift-for-cat__image-wrap {
+  padding-top: 58px;
+}
+
+.gift-for-cat__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.gift-for-cat__text {
+  max-width: 161px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-white;
+}

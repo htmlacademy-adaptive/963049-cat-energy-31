@@ -1,0 +1,25 @@
+.radio {
+  margin: 0;
+  margin-top: 52px;
+  margin-bottom: 19px;
+  padding: 0;
+  border: none;
+}
+
+.radio__list {
+  @include base-list;
+}
+
+.radio__item {
+  margin-bottom: 19px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.radio__label {
+  font-family: $title-font;
+  font-size: 16px;
+  text-transform: uppercase;
+}

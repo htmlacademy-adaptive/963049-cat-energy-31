@@ -1,0 +1,15 @@
+.catalog__title {
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 41px;
+  padding: 0;
+  font-family: $title-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: $basic-black;
+}
+
+.catalog__list {
+  @include base-list;
+}
