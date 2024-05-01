@@ -1,0 +1,33 @@
+.products-cards {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.products-cards:last-child {
+  margin-bottom: 0;
+}
+
+.products-cards__slim,
+.products-cards__pro {
+  background-color: $basic-light-grey;
+}
+
+.products-cards__title {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.products-cards__link {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic-black;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}

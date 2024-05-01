@@ -1,0 +1,19 @@
+.nav__list {
+  @include base-list;
+}
+
+.nav__item {
+  margin-top: 22px;
+  margin-bottom: 24px;
+}
+
+.nav__item-link {
+  font-family: $title-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-black;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}

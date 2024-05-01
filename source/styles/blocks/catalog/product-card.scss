@@ -1,0 +1,26 @@
+.product-card__title-link {
+  text-decoration: none;
+}
+
+.product-card__title,
+.product-card__more-title {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-dark-grey;
+  text-transform: uppercase;
+}
+
+.product-card__content-name,
+.product-card__content-value,
+.product-card__more-text {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product-card__button-more {
+  color: $basic-medium-dark-grey;
+  background-color: $basic-light-grey;
+}

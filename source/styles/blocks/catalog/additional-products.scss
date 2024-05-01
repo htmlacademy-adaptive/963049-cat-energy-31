@@ -1,0 +1,17 @@
+.additional-products {
+  margin-bottom: 40px;
+}
+
+.additional-products__title {
+  margin: 0;
+  padding: 0;
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.additional-products__list {
+  @include base-list;
+  margin-bottom: 35px;
+}
