@@ -1,14 +1,30 @@
+.additional-product-card__wrap {
+  padding-top: 13px;
+}
+
 .additional-product-card__title {
   margin: 0;
+  margin-bottom: 13px;
   padding: 0;
   font-family: $title-font;
   font-size: 16px;
   line-height: 16px;
   color: $basic-dark-grey;
+  text-transform: uppercase;
+}
+
+.additional-product-card__content-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .additional-product-card__value,
 .additional-product-card__price {
+  margin: 0;
+  padding: 0;
   line-height: 14px;
 }
 

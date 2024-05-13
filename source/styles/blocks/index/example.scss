@@ -17,3 +17,99 @@
   margin: 0;
   margin-bottom: 20px;
 }
+
+.example__image-wrap {
+  --pos: 50%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 280px;
+}
+
+.example-image-cat {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.image-cat-before {
+  background-color: $basic-grey;
+  z-index: 1;
+}
+
+.image-cat-after {
+  width: var(--pos);
+  background-color: $basic-grey;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.example__image-before,
+.example__image-after {
+  display: block;
+  width: 280px;
+  height: 256px;
+  object-fit: cover;
+}
+
+.example__button {
+  position: absolute;
+  display: block;
+  padding: 0;
+  top: 0;
+  left: var(--pos);
+  width: 4px;
+  height: 100%;
+  background-color: $basic-average-dark-grey;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  z-index: 3;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    background-color: $basic-white;
+    border: 2px solid $basic-average-dark-grey;
+    border-radius: 50%;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: var(--pos);
+    width: 24px;
+    height: 18px;
+    transform: translate(-50%, -50%);
+    background-color: $basic-average-dark-grey;
+    mask-image: url("../../icons/stack.svg#icon-divider");
+    mask-repeat: no-repeat;
+    mask-position: 50%;
+    mask-size: 24px 18px;
+  }
+
+  &:hover,
+  &:hover::after {
+    background-color: $basic-green;
+  }
+
+  &:hover::before {
+    border: 2px solid $basic-green;
+  }
+
+  &:active,
+  &:active::after {
+    background-color: $basic-soft-green;
+  }
+
+  &:active::before {
+    background-color: $basic-white;
+    border: 2px solid $basic-soft-green;
+  }
+}

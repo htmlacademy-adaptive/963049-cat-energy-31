@@ -1,5 +1,23 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: $basic-light-grey;
+}
+
+.contacts__footer-logo-link {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__footer-logo-title-image {
+  fill: $basic-medium-black;
+
+  &:hover path {
+    fill: #3e3e3e;
+  }
 }

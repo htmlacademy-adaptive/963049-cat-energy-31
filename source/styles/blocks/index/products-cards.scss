@@ -1,10 +1,5 @@
 .products-cards {
   margin: 0;
-  margin-bottom: 20px;
-}
-
-.products-cards:last-child {
-  margin-bottom: 0;
 }
 
 .products-cards__slim,
@@ -31,3 +26,25 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+/*
+
+
+  &:hover::after {
+    width: 32px;
+    height: 10px;
+    top: 7px;
+    right: -36px;
+    background-size: 32px 10px;
+  }
+
+  &:active::after {
+    width: 32px;
+    height: 10px;
+    top: 7px;
+    right: -36px;
+    background-size: 32px 10px;
+    fill: #b3b3b3;
+  }
+}
+ */

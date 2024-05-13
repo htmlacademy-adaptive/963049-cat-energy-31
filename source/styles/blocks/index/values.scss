@@ -1,21 +1,43 @@
+.values__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
 .values__weight,
 .values__time {
+  min-width: 124px;
   margin: 0;
-  padding: 0;
+  padding: 15px 25px 28px 22px;
   font-family: $title-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
   color: $basic-black;
+  border: 1px solid $basic-normal-grey;
+  border-radius: 3px;
 }
 
 .values__weight-text,
 .values__time-text {
-  margin: 0;
-  padding: 0;
+  padding: 0 10px;
+  margin: -12px 15px 0;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+  background-color: $basic-grey;
+}
+
+.values__costs-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
 }
 
 .values__costs,

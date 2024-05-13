@@ -5,6 +5,10 @@
 }
 
 .header-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   padding-top: 13px;
   padding-bottom: 14px;
 }

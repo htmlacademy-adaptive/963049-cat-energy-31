@@ -18,18 +18,18 @@
   <header class="main-header">
     <div class="container">
       <div class="main-header__logo-wrap header-logo">
-        <a class="header-logo__logo-link" href="#">
+        <a class="header-logo__logo-link" href="index.html">
           <picture>
-            <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="/images/icons/logo-desktop-header.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="/images/icons/logo-tablet-header.svg">
-            <img class="header-logo__logo-image" src="/images/icons/logo-mobile-header.svg" width="33" height="38" alt="Логотип сайта 'Кэт энерджи'">
+            <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop-header.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet-header.svg">
+            <img class="header-logo__logo-image" src="images/logo-mobile-header.svg" width="33" height="38" alt="Логотип сайта 'Кэт энерджи'">
           </picture>
         </a>
-        <a class="header-logo__logo-title-link" href="#">
+        <a class="header-logo__logo-title-link" href="index.html">
           <picture>
-            <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="/images/icons/logo-title-desktop-header.svg">
-            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="/images/icons/logo-title-tablet-header.svg">
-            <img class="header-logo__logo-title-image" src="/images/icons/logo-title-mobile-header.svg" width="101" height="18" alt="Логотип с наименованием сайта 'Кэт энерджи'">
+            <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-title-desktop-header.svg">
+            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-title-tablet-header.svg">
+            <img class="header-logo__logo-title-image" src="images/logo-title-mobile-header.svg" width="101" height="18" alt="Логотип с наименованием сайта 'Кэт энерджи'">
           </picture>
         </a>
         <button class="main-header__button button-toggle" type="button">
@@ -65,7 +65,7 @@
             программу питания для вашего кота</p>
         </div>
 
-        <form class="form" action="https://echo.htmlacademy.ru">
+        <form class="form" action="https://echo.htmlacademy.ru" method="get">
           <div class="form__wrap">
             <div class="form__user-wrap">
               <fieldset class="form__user user">
@@ -108,19 +108,13 @@
                 <h3 class="user-contacts__title">Контактные данные (владельца кота)</h3>
                 <div class="user-contacts__fields-wrap">
                   <p class="user-contacts__field">
-                    <label class="user-contacts__label" for="email">E-mail:*</label>
-                    <input class="user-contacts__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-                    <svg class="user-contacts__icon-mail" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.500336 5.5V13.5H17.5041V5.5M0.500336 0.5H17.5041V2.5L9.00223 8.5L0.500336 2.5V0.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <label class="user-contacts__label user-contacts__icon-email" for="email">E-mail:*</label>
+                    <input class="user-contacts__input " type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
                     <span class="visually-hidden">Иконка почтовый конверт</span>
                   </p>
                   <p class="user-contacts__field">
-                    <label class="user-contacts__label" for="phone">Телефон:*</label>
+                    <label class="user-contacts__label user-contacts__icon-phone" for="phone">Телефон:*</label>
                     <input class="user-contacts__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-                    <svg class="user-contacts__icon-phone" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.00224 8H15.5041M15.5041 8L13.0036 5.5M15.5041 8L13.0036 10.5M5.50191 0.5V5.5H2.50124V10.5H5.50191V15.5H3.00135C1.50102 15.5 0.500793 14.5 0.500793 13V3C0.500793 1.5 1.50102 0.5 3.00135 0.5H5.50191Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
                     <span class="visually-hidden">Иконка телефонная трубка</span>
                   </p>
                 </div>
@@ -197,38 +191,36 @@
           </div>
         </div>
       </div>
-      <div class="main-footer__contacts contacts">
-        <div class="container">
-          <a class="contacts__footer-logo-link" href="#">
-            <img class="contacts__footer-logo-title-image" src="/images/icons/icon-title-footer-logo.svg" width="128" height="24" alt="Логотип c наименованием сайта 'Кэт энерджи'">
+      <div class="main-footer__contacts contacts container">
+        <a class="contacts__footer-logo-link" href="#">
+          <img class="contacts__footer-logo-title-image" src="images/icon-title-footer-logo.svg" width="128" height="24" alt="Логотип c наименованием сайта 'Кэт энерджи'">
+        </a>
+        <div class="contacts__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__item-link social-link-vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Иконка VK</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Иконка Youtube</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__item-link social-link-telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Иконка Telegram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
           </a>
-          <div class="contacts__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__item-link" href="#">
-                  <img class="social__item-link-image" src="/images/icons/icon-vkontakte-mobile.svg" width="28" height="22" alt="Иконка VK">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__item-link" href="#">
-                  <img class="social__item-link-image" src="/images/icons/icon-youtube-mobile.svg" width="28" height="22" alt="Иконка Youtube">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__item-link" href="#">
-                  <img class="social__item-link-image" src="/images/icons/icon-telegram-mobile.svg" width="28" height="22" alt="Иконка Telegram">
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="contacts__copyright copyright">
-            <a class="copyright__link" href="#">
-              <p class="copyright__ext">HTML Academy</p>
-            </a>
-            <a class="copyright__logo-link" href="#">
-              <img class="copyright__logo-image" src="/images/icons/icon-html-academy-footer-mobile.svg" width="27" height="34" alt="Иконка HTML Academy">
-            </a>
-          </div>
+          <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Иконка HTML Academy</span>
+          </a>
         </div>
       </div>
     </div>

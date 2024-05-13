@@ -5,11 +5,14 @@
 }
 
 .location__address-wrap {
+  display: flex;
+  justify-content: space-between;
   padding-top: 26px;
   padding-bottom: 26px;
 }
 
 .location__invite-text {
+  max-width: 140px;
   margin: 0;
   padding: 0;
   font-family: $title-font;
@@ -23,6 +26,7 @@
 .location__address {
   margin: 0;
   padding: 0;
+  max-width: 140px;
   font-style: normal;
   line-height: 20px;
 }

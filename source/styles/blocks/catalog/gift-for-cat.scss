@@ -1,6 +1,7 @@
 .gift-for-cat__wrap {
   display: block;
   min-height: 290px;
+  padding: 58px 61px 43px 58px;
   background-size: 280 290;
   background-image: url("../../../images/additional-bg-gift-img-mobile@1x.jpg");
   background-position: center;
@@ -16,6 +17,22 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 48px;
+}
+
+.gift-for-cat__gift-box::before {
+  display: block;
+  content: "";
+  width: 78px;
+  height: 80px;
+  margin: 0 auto;
+  background-image: url("../../icons/stack.svg#icon-gift");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 78px 80px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 80px 82px;
+  }
 }
 
 .gift-for-cat__text {

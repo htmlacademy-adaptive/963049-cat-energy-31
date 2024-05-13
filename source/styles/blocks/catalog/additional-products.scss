@@ -4,6 +4,7 @@
 
 .additional-products__title {
   margin: 0;
+  margin-bottom: 36px;
   padding: 0;
   font-family: $title-font;
   font-size: 24px;
@@ -13,5 +14,8 @@
 
 .additional-products__list {
   @include base-list;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 19px;
   margin-bottom: 35px;
 }

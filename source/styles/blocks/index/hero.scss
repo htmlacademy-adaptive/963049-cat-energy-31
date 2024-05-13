@@ -1,4 +1,5 @@
 .hero__bg-wrap {
+  margin-bottom: 20px;
   background-image:
     linear-gradient(to bottom, $basic-light-green 302px, $basic-white 100%),
     url("../../../images/hero-background-mobile@1x.jpg");
@@ -24,10 +25,6 @@
       720px 100%;
     background-position: center right;
   }
-}
-
-.hero__wrap {
-  margin-bottom: 20px;
 }
 
 .hero__title {
