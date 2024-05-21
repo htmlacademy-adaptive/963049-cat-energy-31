@@ -61,12 +61,15 @@
   grid-column: 1 / 4;
   grid-row: 2 / 3;
   margin: 0;
-  margin-bottom: 38px;
   padding: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $basic-medium-grey;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,7 +81,6 @@
 
 .products-pro__link {
   position: relative;
-  margin-top: 15px;
   grid-row: 3 / 4;
   grid-column: 1 / 4;
 
@@ -93,8 +95,8 @@
   content: "";
   width: 24px;
   height: 10px;
-  top: 50%;
-  left: 110px;
+  top: 30%;
+  left: 90px;
   transform: translateY(-50%);
   background-color: $basic-black;
   mask-image: url("../../icons/stack.svg#icon-arrow-mobile");
@@ -102,6 +104,11 @@
   mask-position: center;
   mask-size: 24px 10px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    left: 120px;
+  }
 }
 
 .products-pro__link:hover .products-pro__link-image {

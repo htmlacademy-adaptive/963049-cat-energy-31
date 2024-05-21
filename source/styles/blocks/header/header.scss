@@ -1,16 +1,9 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
-}
-
 .header-logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 13px;
-  padding-bottom: 14px;
+  max-width: 767px;
 
   @media (min-width: $tablet-width) {
     gap: 13px;
