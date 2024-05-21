@@ -1,1 +1,7 @@
-/* button-toggle */
+.button-toggle {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

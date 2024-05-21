@@ -1,5 +1,20 @@
+.nav--desktop .nav__item-link {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
+}
+
 .nav__list {
   @include base-list;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 33px;
+  }
 }
 
 .nav__item {
@@ -7,6 +22,10 @@
   padding-top: 22px;
   padding-bottom: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+  }
 }
 
 .nav__item-link {
@@ -18,4 +37,14 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

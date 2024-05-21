@@ -11,4 +11,21 @@
   flex-wrap: wrap;
   padding-top: 13px;
   padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
+}
+
+.header-logo__logo-image {
+  display: block;
+}
+
+.header-logo__logo-title-image {
+  display: block;
 }

@@ -1,20 +1,16 @@
-.radio {
-  margin: 0;
-  margin-top: 52px;
-  margin-bottom: 19px;
-  padding: 0;
-  border: none;
-}
-
 .radio__list {
   @include base-list;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 
-.radio__item {
-  margin-bottom: 19px;
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px;
+    border: 1px solid $basic-soft-grey;
+  }
 
-  &:last-child {
-    margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    padding: 25px 28px;
   }
 }
 
@@ -22,4 +18,9 @@
   font-family: $title-font;
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

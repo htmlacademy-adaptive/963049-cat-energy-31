@@ -6,6 +6,13 @@
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: $basic-light-grey;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
 }
 
 .contacts__footer-logo-link {

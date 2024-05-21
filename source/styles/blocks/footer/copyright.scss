@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   align-items: center;
   min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 168px;
+  }
 }
 
 .copyright__link {

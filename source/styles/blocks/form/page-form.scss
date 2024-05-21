@@ -1,16 +1,37 @@
 .page-form__title {
   margin: 0;
   margin-bottom: 37px;
-  font-family: $primary-font;
+  font-family: $title-font;
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+    margin-bottom: 55px;
+  }
 }
 
 .page-form__description {
   margin: 0;
   margin-bottom: 39px;
-  font-family: $primary-font;
+  font-family: $title-font;
   line-height: 18px;
   color: $basic-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 323px;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+  }
 }
