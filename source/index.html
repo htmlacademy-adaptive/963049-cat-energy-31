@@ -16,41 +16,43 @@
 <body class="page-body">
 
   <header class="main-header">
-    <div class="container">
-      <div class="main-header__wrap">
-        <div class="main-header__logo-wrap header-logo">
-          <a class="header-logo__logo-link" href="#">
-            <picture>
-              <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop-header.svg">
-              <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet-header.svg">
-              <img class="header-logo__logo-image" src="images/logo-mobile-header.svg" width="33" height="38" alt="Логотип сайта 'Кэт энерджи'">
-            </picture>
-          </a>
-          <a class="header-logo__logo-title-link" href="#">
-            <picture>
-              <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-title-desktop-header.svg">
-              <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-title-tablet-header.svg">
-              <img class="header-logo__logo-title-image" src="images/logo-title-mobile-header.svg" width="101" height="18" alt="Логотип с наименованием сайта 'Кэт энерджи'">
-            </picture>
-          </a>
-          <button class="main-header__button-toggle button-toggle" type="button">
-            <span class="visually-hidden">Кнопка открытия меню</span>
-          </button>
-        </div>
-        <nav class="main-header__nav nav nav--desktop">
+    <div class="main-header__wrap">
+      <div class="main-header__logo-wrap header-logo">
+        <a class="header-logo__logo-link" href="#">
+          <picture>
+            <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop-header.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet-header.svg">
+            <img class="header-logo__logo-image" src="images/logo-mobile-header.svg" width="33" height="38" alt="Логотип сайта 'Кэт энерджи'">
+          </picture>
+          <span class="visually-hidden">Логотип сайта 'Кэт энерджи'</span>
+        </a>
+        <a class="header-logo__logo-title-link" href="#">
+          <picture>
+            <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-title-desktop-header.svg">
+            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-title-tablet-header.svg">
+            <img class="header-logo__logo-title-image" src="images/logo-title-mobile-header.svg" width="101" height="18" alt="Логотип с наименованием сайта 'Кэт энерджи'">
+          </picture>
+          <span class="visually-hidden">Логотип с наименованием сайта 'Кэт энерджи'</span>
+        </a>
+        <button class="main-header__button button-toggle button-toggle--closed button-toggle--nojs" type="button">
+          <span class="visually-hidden">Кнопка открытия меню</span>
+        </button>
+      </div>
+      <nav class="main-header__nav nav nav--closed nav--nojs nav--desktop">
+        <div class="nav__wrapper">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__item-link nav__item-link--active" href="#">Главная</a>
+              <a class="nav__item-link nav__item-link--active nav__item-link--active-desktop nav__item-link--desktop" href="#">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__item-link" href="catalog.html">Каталог продукции</a>
+              <a class="nav__item-link nav__item-link--desktop" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="nav__item">
-              <a class="nav__item-link" href="form.html">Подбор программы</a>
+              <a class="nav__item-link nav__item-link--desktop" href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -207,8 +209,8 @@
         </div>
       </div>
       <div class="main-footer__contacts contacts container">
-        <a class="contacts__footer-logo-link" href="#">
-          <img class="contacts__footer-logo-title-image" src="images/icon-title-footer-logo.svg" width="128" height="24" alt="Логотип c наименованием сайта 'Кэт энерджи'">
+        <a class="contacts__footer-logo-link contacts__footer-logo-title-image" href="index.html">
+          <span class="visually-hidden">Логотип c наименованием сайта 'Кэт энерджи'</span>
         </a>
         <div class="contacts__social social">
           <ul class="social__list">

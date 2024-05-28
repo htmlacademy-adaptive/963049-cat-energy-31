@@ -16,28 +16,30 @@
 <body class="page-body">
 
   <header class="main-header">
-    <div class="container">
-      <div class="main-header__wrap">
-        <div class="main-header__logo-wrap header-logo">
-          <a class="header-logo__logo-link" href="index.html">
-            <picture>
-              <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop-header.svg">
-              <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet-header.svg">
-              <img class="header-logo__logo-image" src="images/logo-mobile-header.svg" width="33" height="38" alt="Логотип сайта 'Кэт энерджи'">
-            </picture>
-          </a>
-          <a class="header-logo__logo-title-link" href="index.html">
-            <picture>
-              <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-title-desktop-header.svg">
-              <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-title-tablet-header.svg">
-              <img class="header-logo__logo-title-image" src="images/logo-title-mobile-header.svg" width="101" height="18" alt="Логотип с наименованием сайта 'Кэт энерджи'">
-            </picture>
-          </a>
-          <button class="main-header__button button-toggle" type="button">
-            <span class="visually-hidden">Кнопка открытия меню</span>
-          </button>
-        </div>
-        <nav class="main-header__nav nav">
+    <div class="main-header__wrap">
+      <div class="main-header__logo-wrap header-logo">
+        <a class="header-logo__logo-link" href="index.html">
+          <picture>
+            <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop-header.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet-header.svg">
+            <img class="header-logo__logo-image" src="images/logo-mobile-header.svg" width="33" height="38" alt="Логотип сайта 'Кэт энерджи'">
+          </picture>
+          <span class="visually-hidden">Логотип сайта 'Кэт энерджи'</span>
+        </a>
+        <a class="header-logo__logo-title-link" href="index.html">
+          <picture>
+            <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-title-desktop-header.svg">
+            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-title-tablet-header.svg">
+            <img class="header-logo__logo-title-image" src="images/logo-title-mobile-header.svg" width="101" height="18" alt="Логотип с наименованием сайта 'Кэт энерджи'">
+          </picture>
+          <span class="visually-hidden">Логотип с наименованием сайта 'Кэт энерджи'</span>
+        </a>
+        <button class="main-header__button button-toggle button-toggle--closed button-toggle--nojs" type="button">
+          <span class="visually-hidden">Кнопка открытия меню</span>
+        </button>
+      </div>
+      <nav class="main-header__nav nav nav--closed nav--nojs">
+        <div class="nav__wrapper">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__item-link" href="index.html">Главная</a>
@@ -49,19 +51,21 @@
               <a class="nav__item-link" href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   </header>
 
   <main class="main-catalog">
     <h1 class="visually-hidden">Основной каталог товаров</h1>
-    <div class="container">
-      <section class="main-catalog__catalog catalog">
-        <h2 class="catalog__title">Каталог продукции</h2>
+    <section class="main-catalog__catalog catalog">
+      <div class="container">
+        <div class="catalog__wrap-title container-catalog">
+          <h2 class="catalog__title">Каталог продукции</h2>
+        </div>
         <div class="catalog__wrap">
           <ul class="catalog__list">
-            <li class="catalog__item product-card">
+            <li class="catalog__item product-card container-catalog">
               <div class="product-card__wrap">
                 <div class="product-card__content-wrap">
                   <div class="product-card__image-wrap">
@@ -95,7 +99,7 @@
                 <button class="product-card__button button-primary" type="button">Заказать</button>
               </div>
             </li>
-            <li class="catalog__item product-card">
+            <li class="catalog__item product-card container-catalog">
               <div class="product-card__wrap">
                 <div class="product-card__content-wrap">
                   <div class="product-card__image-wrap">
@@ -129,7 +133,7 @@
                 <button class="product-card__button button-primary" type="button">Заказать</button>
               </div>
             </li>
-            <li class="catalog__item product-card">
+            <li class="catalog__item product-card container-catalog">
               <div class="product-card__wrap">
                 <div class="product-card__content-wrap">
                   <div class="product-card__image-wrap">
@@ -163,7 +167,7 @@
                 <button class="product-card__button button-primary" type="button">Заказать</button>
               </div>
             </li>
-            <li class="catalog__item product-card">
+            <li class="catalog__item product-card container-catalog">
               <div class="product-card__wrap">
                 <div class="product-card__content-wrap">
                   <div class="product-card__image-wrap">
@@ -197,7 +201,7 @@
                 <button class="product-card__button button-primary" type="button">Заказать</button>
               </div>
             </li>
-            <li class="catalog__item product-card">
+            <li class="catalog__item product-card container-catalog">
               <div class="product-card__wrap">
                 <div class="product-card__content-wrap">
                   <div class="product-card__image-wrap">
@@ -231,7 +235,7 @@
                 <button class="product-card__button button-primary" type="button">Заказать</button>
               </div>
             </li>
-            <li class="catalog__item product-card">
+            <li class="catalog__item product-card container-catalog">
               <div class="product-card__wrap">
                 <div class="product-card__content-wrap">
                   <div class="product-card__image-wrap">
@@ -265,7 +269,7 @@
                 <button class="product-card__button button-primary" type="button">Заказать</button>
               </div>
             </li>
-            <li class="catalog__item product-card">
+            <li class="catalog__item product-card container-catalog">
               <div class="product-card__wrap">
                 <div class="product-card__content-wrap">
                   <div class="product-card__image-wrap">
@@ -299,7 +303,7 @@
                 <button class="product-card__button button-primary" type="button">Заказать</button>
               </div>
             </li>
-            <li class="catalog__item product-card">
+            <li class="catalog__item product-card container-catalog">
               <div class="product-card__more-wrap product-card__image">
                 <h3 class="product-card__more-title">Показать еще 100500 товаров</h3>
                 <p class="product-card__more-text">На самом деле вкусов гораздо больше!</p>
@@ -308,10 +312,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="main-catalog__additional-products additional-products">
-        <div class="additional-products__wrap">
+    <section class="main-catalog__additional-products additional-products">
+      <div class="container">
+        <div class="additional-products__wrap container-catalog">
           <h2 class="additional-products__title">Дополнительные товары</h2>
           <div class="additional-products__content-wrap">
             <div class="additional-products__list-wrap">
@@ -377,22 +383,23 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="main-catalog__subscribe subscribe">
-        <div class="subscribe__wrap">
+    <section class="main-catalog__subscribe subscribe">
+      <div class="container">
+        <div class="subscribe__wrap container-catalog">
           <h2 class="subscribe__title">Акции и новинки</h2>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
             <label class="subscribe__label" for="subscribe-email">Подпишитесь на наши новости и не пропустите ни одного предложения!</label>
             <div class="subscribe__input-wrap">
-              <input class="subscribe__input" id="subscribe-email" type="text" name="email-adress" placeholder="кuklachev@gmail.com" required>
+              <input class="subscribe__input" id="subscribe-email" type="text" name="email-adress" placeholder="кuklachev@gmail.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
             <button class="subscribe__button button-primary" type="submit">Подписаться</button>
             </div>
           </form>
         </div>
-      </section>
-    </div>
-
+      </div>
+    </section>
   </main>
 
   <footer class="main-footer">
@@ -416,8 +423,8 @@
         </div>
       </div>
       <div class="main-footer__contacts contacts container">
-        <a class="contacts__footer-logo-link" href="#">
-          <img class="contacts__footer-logo-title-image" src="images/icon-title-footer-logo.svg" width="128" height="24" alt="Логотип c наименованием сайта 'Кэт энерджи'">
+        <a class="contacts__footer-logo-link contacts__footer-logo-title-image" href="index.html">
+          <span class="visually-hidden">Логотип c наименованием сайта 'Кэт энерджи'</span>
         </a>
         <div class="contacts__social social">
           <ul class="social__list">

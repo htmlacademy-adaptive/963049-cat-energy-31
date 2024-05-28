@@ -1,3 +1,17 @@
+.social {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
 .social__list {
   @include base-list;
   display: flex;

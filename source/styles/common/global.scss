@@ -28,6 +28,10 @@ body {
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+
+    &--form {
+      padding: 0 70px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -35,8 +39,16 @@ body {
   }
 }
 
+.container-catalog {
+  @media (max-width: $mobile-width-only) {
+    padding: 0 20px;
+  }
+}
+
 .container-form {
-  @media (min-width: $tablet-width) {
-    padding: 0 70px;
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
   }
 }

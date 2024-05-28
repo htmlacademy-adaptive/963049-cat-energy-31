@@ -1,13 +1,20 @@
 .user-contacts__title {
+  position: relative;
+  max-width: 227px;
   margin: 0;
   margin-bottom: 35px;
+  padding-right: 40px;
   font-family: $title-font;
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    max-width: 650px;
+    margin-left: -40px;
     margin-bottom: 76px;
+    padding-left: 40px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -52,12 +59,22 @@
 
 .user-contacts__input {
   width: 100%;
-  padding: 14px 30px 13px 15px;
+  padding: 14px 40px 13px 15px;
   font-family: $title-font;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid $basic-soft-grey;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $basic-normal-grey;
+  }
+
+  &[id="email"]:invalid:not(:placeholder-shown),
+  &[id="phone"]:invalid:not(:placeholder-shown) {
+    border-color: $basic-red;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -65,32 +82,54 @@
   }
 }
 
-.user-contacts__icon-email::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  right: 15px;
-  width: 18px;
-  height: 15px;
-  transform: translate(-50%, -50%);
-  background-color: $basic-black;
-  mask-image: url("../../icons/stack.svg#icon-email");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: 18px 15px;
+.user-contacts__icon-email {
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 12px;
+    width: 18px;
+    height: 15px;
+    transform: translate(-50%, -50%);
+    background-color: $basic-black;
+    mask-image: url("../../icons/stack.svg#icon-email");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 18px 15px;
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 16px;
+  }
 }
 
-.user-contacts__icon-phone::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  right: 15px;
-  width: 16px;
-  height: 16px;
-  transform: translate(-50%, -50%);
-  background-color: $basic-black;
-  mask-image: url("../../icons/stack.svg#icon-phone");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: 16px 16px;
+.user-contacts__input[id="email"]:invalid:not(:placeholder-shown) + .user-contacts__icon-email::after {
+  background-color: $basic-red;
+}
+
+.user-contacts__icon-phone {
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 15px;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+    background-color: $basic-black;
+    mask-image: url("../../icons/stack.svg#icon-phone");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 16px 16px;
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    background-color: $basic-green;
+  }
 }

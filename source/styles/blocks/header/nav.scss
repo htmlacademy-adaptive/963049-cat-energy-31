@@ -1,6 +1,35 @@
-.nav--desktop .nav__item-link {
-  @media (min-width: $desktop-width) {
-    color: $basic-white;
+.nav {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &--closed .nav__wrapper {
+      display: none;
+    }
+
+    &--opened .nav__wrapper {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      background-color: $basic-white;
+    }
+
+    &--nojs .nav_nav__wrapper {
+      position: static;
+      min-height: 0;
+    }
+
+    &--nojs .nav__list {
+      display: flex;
+    }
+  }
+
+  &--desktop .nav__item-link {
+    @media (min-width: $desktop-width) {
+      color: $basic-white;
+    }
   }
 }
 
@@ -14,17 +43,31 @@
     justify-content: space-between;
     align-items: center;
     gap: 33px;
+    padding-top: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
   }
 }
 
 .nav__item {
   margin: 0;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding: 22px 0;
   text-align: center;
+  border-top: 1px solid $basic-soft-light-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $basic-soft-light-grey;
+  }
 
   @media (min-width: $tablet-width) {
-    padding-top: 39px;
+    padding: 0;
+    border-top: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 
@@ -41,10 +84,44 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+
+    &:hover {
+      color: $basic-average-dark-grey;
+    }
+
+    &:active {
+      color: $basic-opacity-grey;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 8px;
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+
+  &--active-desktop {
+    @media (min-width: $desktop-width) {
+      padding-bottom: 8px;
+      border-bottom: 2px solid $basic-white;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      &:hover {
+        color: $basic-lime-green-a;
+      }
+
+      &:active {
+        color: $basic-lime-green-b;
+      }
+    }
   }
 }

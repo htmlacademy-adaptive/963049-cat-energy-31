@@ -16,14 +16,21 @@
 }
 
 .checkbox__title {
+  position: relative;
+  max-width: 181px;
   margin: 0;
   margin-bottom: 34px;
+  padding-right: 40px;
   font-family: $title-font;
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    max-width: 291px;
+    margin-left: -40px;
+    padding-left: 40px;
     margin-bottom: 57px;
     font-size: 36px;
     line-height: 36px;
@@ -43,7 +50,7 @@
   @include base-list;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 12px;
+  row-gap: 25px;
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
@@ -53,6 +60,10 @@
     grid-template-rows: repeat(2, 40px);
     gap: 32px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .checkbox__input {
@@ -61,16 +72,67 @@
 }
 
 .checkbox__label {
+  position: relative;
+  display: block;
+  max-width: 260px;
+  padding-left: 45px;
   font-family: $title-font;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
 }
+
+.checkbox__mark {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: $basic-white;
+  border: 1px solid $basic-normal-grey;
+
+  &:hover {
+    border-color: $basic-grey-c;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
+}
+
+.checkbox__input[type="checkbox"]:checked + .checkbox__mark::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 14px;
+  transform: translate(-50%, -50%);
+  background-color: $basic-green;
+  mask-image: url("../../icons/stack.svg#icon-checkbox");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 18px 14px;
+}
+
+.checkbox__input:disabled ~ .checkbox__label-text {
+  color: $basic-opacity-grey-c;
+  border-color: $basic-opacity-grey-b;
+}
+
+.checkbox__input:disabled:checked + .checkbox__mark::before {
+  background-color: $basic-opacity-light-green;
+}
+
 
 .checkbox__button {
   margin-bottom: 21px;
@@ -79,6 +141,8 @@
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     margin-bottom: 0;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 

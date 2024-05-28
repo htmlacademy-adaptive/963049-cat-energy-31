@@ -1,8 +1,30 @@
+.radio {
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $basic-soft-grey;
+    border-bottom: 1px solid $basic-soft-grey;
+  }
+}
+
+.radio .container {
+  @media (max-width: $mobile-width-only) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .radio__list {
   @include base-list;
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 25px;
+
 
   @media (min-width: $tablet-width) {
     padding: 23px 27px;
@@ -10,17 +32,77 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 28px;
+    padding: 30px 28px;
   }
 }
 
 .radio__label {
+  position: relative;
+  display: block;
+  max-width: 260px;
+  padding-left: 45px;
   font-family: $title-font;
   font-size: 16px;
   text-transform: uppercase;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    max-width: 300px;
+    padding-left: 60px;
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.radio__label-text {
+  color: $basic-dark-grey;
+}
+
+.radio__mark {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: $basic-white;
+  border-radius: 50%;
+  border: 1px solid $basic-normal-grey;
+
+  &:hover {
+    border-color: $basic-grey-c;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.radio__input[type="radio"]:checked + .radio__mark::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.radio__input:disabled ~ .radio__label-text {
+  color: $basic-opacity-grey-c;
+  border-color: $basic-opacity-grey-b;
+}
+
+.radio__input:disabled:checked + .radio__mark::before {
+  background-color: $basic-opacity-light-green;
 }

@@ -1,3 +1,17 @@
+.user .container {
+  @media (max-width: $mobile-width-only) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .user__field {
   display: flex;
   align-items: center;
@@ -36,6 +50,16 @@
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid $basic-soft-grey;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $basic-normal-grey;
+  }
+
+  &[id="name"]:invalid:not(:placeholder-shown),
+  &[id="weight"]:invalid:not(:placeholder-shown) {
+    border-color: $basic-red;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 11px 20px;

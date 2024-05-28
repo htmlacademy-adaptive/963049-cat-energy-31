@@ -41,7 +41,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    gap: 10px;
+    gap: 7px;
   }
 }
 
@@ -49,6 +49,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 3px;
+    border-bottom: 1px solid $basic-normal-grey;
+  }
 }
 
 .product-card__description-wrap {
@@ -69,6 +74,15 @@
   margin: 0;
   margin-bottom: 14px;
   max-width: 76px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     max-width: 135px;
@@ -123,7 +137,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 82px;
+    margin-top: 80px;
     margin-bottom: 0;
     padding: 0 35px 40px;
     border: 2px solid #f2f2f2;
@@ -131,6 +145,16 @@
 }
 
 .product-card__image {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
   &::before {
     display: block;
     content: "";
@@ -139,17 +163,19 @@
     width: 30px;
     height: 30px;
     margin-bottom: 23px;
-    background-image: url("../../icons/stack.svg#icon-plus");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 30px 30px;
+    background-color: $basic-ashen-grey;
+    mask-image: url("../../icons/stack.svg#icon-plus");
+    mask-repeat: no-repeat;
+    mask-position: 50%;
+    mask-size: 30px 30px;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
       margin-top: 50px;
       margin-bottom: 50px;
-      background-size: 60px 60px;
+      mask-size: 60px 60px;
     }
   }
 }
@@ -171,7 +197,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 170px;
-    margin-bottom: 67px;
+    margin-bottom: 75px;
     text-align: center;
   }
 }
@@ -179,4 +205,10 @@
 .product-card__button-more {
   color: $basic-medium-dark-grey;
   background-color: $basic-light-grey;
+
+  &:hover,
+  &:active {
+    color: $basic-medium-dark-grey;
+    background-color: $basic-grey-b;
+  }
 }

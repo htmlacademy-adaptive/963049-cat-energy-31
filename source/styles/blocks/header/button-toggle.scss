@@ -1,7 +1,63 @@
 .button-toggle {
+  position: relative;
   display: block;
+  width: 24px;
+  height: 24px;
+  background-color: $basic-white;
+  border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  &--closed::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+    box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+  }
+
+  &--closed:hover::before,
+  &--closed:active::before {
+    background-color: $basic-average-dark-grey;
+    box-shadow: 0 8px 0 0 $basic-average-dark-grey, 0 16px 0 0 $basic-average-dark-grey;
+  }
+
+  &--opened::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $basic-black;
+    transform: rotate(45deg);
+  }
+
+  &--opened::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $basic-black;
+    transform: rotate(-45deg);
+  }
+
+  &--opened:hover::before,
+  &--opened:active::before,
+  &--opened:hover::after,
+  &--opened:active::after {
+    background-color: $basic-average-dark-grey;
+  }
+
+  &--nojs {
+    display: block;
   }
 }
