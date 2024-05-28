@@ -1,12 +1,10 @@
-.subscribe {
-  margin-bottom: 40px;
+.subscribe .container {
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
 }
 
 .subscribe__wrap {
-  @media (min-width: $tablet-width) {
-    padding: 0 38px;
-  }
-
   @media (min-width: $desktop-width) {
     margin-bottom: 72px;
     padding: 0;
@@ -14,6 +12,9 @@
 }
 
 .subscribe__title {
+  position: relative;
+  display: block;
+  max-width: 192px;
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
@@ -21,19 +22,28 @@
   font-size: 24px;
   line-height: 24px;
   color: $basic-black;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    max-width: 300px;
+    padding-left: 40px;
     font-size: 32px;
     line-height: 32px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 340px;
+    margin-left: -40px;
     font-size: 40px;
     line-height: 40px;
   }
 }
 
 .subscribe__form {
+  @media (min-width: $tablet-width) {
+    padding: 0 38px;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 752px;
     margin: 0 auto;
@@ -42,6 +52,7 @@
 
 .subscribe__label {
   display: block;
+  max-width: 280px;
   font-family: $title-font;
   font-size: 16px;
   line-height: 24px;
@@ -79,6 +90,16 @@
   line-height: 30px;
   text-transform: uppercase;
   border: 1px solid $basic-normal-grey;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $basic-grey;
+  }
+
+  &[id="email"]:invalid:not(:placeholder-shown),
+  &[id="phone"]:invalid:not(:placeholder-shown) {
+    border-color: $basic-red;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 0;

@@ -98,6 +98,7 @@
   top: 30%;
   left: 90px;
   transform: translateY(-50%);
+  transition: width 0.5s ease, transform 0.5s ease;
   background-color: $basic-black;
   mask-image: url("../../icons/stack.svg#icon-arrow-mobile");
   mask-repeat: no-repeat;
@@ -112,5 +113,5 @@
 }
 
 .products-pro__link:hover .products-pro__link-image {
-  transform: translate(5px, -50%);
+  transform: translate(8px, -50%);
 }

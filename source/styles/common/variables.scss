@@ -2,10 +2,17 @@
 
 /* COLORS */
 $basic-white: #ffffff;
+$basic-opacity-white: rgba(255, 255, 255, 0.3);
+
 $basic-grey: #eaeaea;
+$basic-grey-b: #ebebeb;
+$basic-grey-c: #bababa;
+$basic-opacity-grey-b: rgba(186, 186, 186, 0.3);
+$basic-opacity-grey-c: rgba(34, 34, 34, 0.3);
 $basic-soft-light-grey: #e6e6e6;
 $basic-soft-grey: #e7e7e7;
 $basic-light-grey: #f2f2f2;
+$basic-opacity-grey: #b3b3b3;
 $basic-ashen-grey: #d3d3d3;
 $basic-medium-grey: #d9d9d9;
 $basic-normal-grey: #cdcdcd;
@@ -13,13 +20,21 @@ $basic-medium-dark-grey: #444444;
 $basic-average-dark-grey: #666666;
 $basic-dark-grey: #222222;
 $basic-black: #000000;
+$basic-light-black: #6b6b6b;
+$basic-soft-black: #3e3e3e;
 $basic-medium-black: #111111;
 $basic-green: #68b738;
 $basic-normal-green: #62a53a;
+$basic-dark-green: #5eaa2f;
+$basic-lime-green-a: #c1ddb1;
+$basic-lime-green-b: #93c377;
 
 $basic-medium-green: rgba(104, 183, 56, 0.3);
 $basic-soft-green: rgba(94, 170, 47, 0.6);
 $basic-light-green: rgba(104, 183, 56, 0.85);
+$basic-opacity-light-green: rgba(104, 183, 56, 0.3);
+
+$basic-red: #ff8282;
 
 /* VIEWPORTS */
 $mobile-width-only: 767px;

@@ -33,9 +33,23 @@
 }
 
 .contacts__footer-logo-title-image {
-  fill: $basic-medium-black;
+  &::before {
+    display: block;
+    content: "";
+    width: 128px;
+    height: 24px;
+    background-color: $basic-black;
+    mask-image: url("../../icons/stack.svg#icon-title-footer-logo");
+    mask-repeat: no-repeat;
+    mask-position: 50%;
+    mask-size: 128px 24px;
+  }
 
-  &:hover path {
-    fill: #3e3e3e;
+  &:hover::before {
+    background-color: $basic-soft-black;
+  }
+
+  &:active::before {
+    background-color: $basic-light-black;
   }
 }
