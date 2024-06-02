@@ -1,0 +1,264 @@
+.application__list-wrap {
+  margin-bottom: 49px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.application__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: $title-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+}
+
+.application__list {
+  @include base-list;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  counter-reset: application__list 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 280px);
+    gap: 37px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 230px);
+    grid-template-rows: 1fr;
+    gap: 94px;
+  }
+}
+
+.application__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  column-gap: 20px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 72px;
+    gap: 31px;
+    padding-top: 40px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 250px;
+  }
+}
+
+.application__item::after {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    counter-increment: application__list;
+    content: counter(application__list);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 118px;
+    margin: 0;
+    padding: 0;
+    font-family: $title-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $basic-light-grey;
+    z-index: -1;
+  }
+}
+
+.application__image-leaf {
+  position: relative;
+  display: block;
+  width: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-size: 60px 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      background-size: 80px 80px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 28px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../icons/stack.svg#icon-leaf-mobile");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 28px;
+  }
+}
+
+.application__image-drink {
+  position: relative;
+  display: block;
+  width: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-size: 60px 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      background-size: 80px 80px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 28px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../icons/stack.svg#icon-drink-mobile");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 28px;
+  }
+}
+
+.application__image-eat {
+  position: relative;
+  display: block;
+  width: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-size: 60px 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      background-size: 80px 80px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 28px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../icons/stack.svg#icon-eat-mobile");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 28px;
+  }
+}
+
+.application__image-watch {
+  position: relative;
+  display: block;
+  width: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-size: 60px 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      background-size: 80px 80px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 28px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../icons/stack.svg#icon-watch-mobile");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 28px;
+  }
+}
+
+.application__item-text {
+  max-width: 200px;
+  margin: 0;
+  padding: 0;
+  padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 245px;
+  }
+}
+
+.application__item-text span {
+  @media (min-width: $tablet-width) {
+    margin: 0 6px 0 0;
+  }
+}

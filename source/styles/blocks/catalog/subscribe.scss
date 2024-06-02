@@ -1,0 +1,121 @@
+.subscribe .container {
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
+}
+
+.subscribe__wrap {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 104px;
+    padding: 0;
+  }
+}
+
+.subscribe__title {
+  position: relative;
+  display: block;
+  max-width: 192px;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-black;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    max-width: 282px;
+    margin-bottom: 67px;
+    padding-left: 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 334px;
+    margin-bottom: 73px;
+    margin-left: -40px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.subscribe__form {
+  @media (min-width: $tablet-width) {
+    padding: 0 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 826px;
+    margin: 0 auto;
+  }
+}
+
+.subscribe__label {
+  display: block;
+  max-width: 280px;
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 24px;
+  color: $basic-black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 632px;
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    margin-bottom: 23px;
+  }
+}
+
+.subscribe__input-wrap {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+.subscribe__input {
+  width: 100%;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  padding: 12px;
+  font-family: $title-font;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 1px solid $basic-normal-grey;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $basic-grey;
+  }
+
+  &[id="email"]:invalid:not(:placeholder-shown),
+  &[id="phone"]:invalid:not(:placeholder-shown) {
+    border-color: $basic-red;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.subscribe__button {
+  padding: 15px;
+  font-size: 20px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 256px;
+  }
+}

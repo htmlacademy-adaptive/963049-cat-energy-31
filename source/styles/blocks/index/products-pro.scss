@@ -1,0 +1,46 @@
+.products-pro {
+  padding: 23px 20px 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 51px 29px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 43px 67px 42px 53px;
+  }
+
+  &::before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 67px;
+    height: 50px;
+    margin-left: -8px;
+    background-image: url("../../icons/stack.svg#logo-cat-pro-mobile");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 67px 50px;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 2 / 4;
+      grid-row: 1 / 4;
+      top: 39px;
+      left: 9px;
+      width: 268px;
+      height: 200px;
+      margin: 0 auto;
+      background-size: 268px 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      top: 4px;
+      left: -18px;
+      width: 134px;
+      height: 100px;
+      margin: 0;
+      background-size: 134px 100px;
+    }
+  }
+}

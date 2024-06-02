@@ -1,0 +1,61 @@
+.contacts {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $basic-light-grey;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 58px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 68px;
+  }
+}
+
+.contacts__footer-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $basic-medium-grey;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.contacts__footer-logo-title-image {
+  &::before {
+    display: block;
+    content: "";
+    width: 128px;
+    height: 24px;
+    background-color: $basic-black;
+    mask-image: url("../../icons/stack.svg#icon-title-footer-logo");
+    mask-repeat: no-repeat;
+    mask-position: 50%;
+    mask-size: 128px 24px;
+  }
+
+  &:hover::before {
+    background-color: $basic-soft-black;
+  }
+
+  &:active::before {
+    background-color: $basic-light-black;
+  }
+}
