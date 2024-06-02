@@ -7,6 +7,10 @@
 .additional-products__wrap {
   margin-bottom: 40px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 79px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     margin-bottom: 96px;
@@ -27,17 +31,18 @@
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    max-width: 380px;
+    margin-bottom: 81px;
     padding-bottom: 0;
     padding-left: 40px;
-    max-width: 400px;
     font-size: 32px;
     line-height: 32px;
     border-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 460px;
+    max-width: 456px;
+    margin-bottom: 80px;
     margin-left: -40px;
     font-size: 40px;
     line-height: 40px;

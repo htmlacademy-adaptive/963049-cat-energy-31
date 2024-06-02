@@ -14,7 +14,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
@@ -29,13 +29,13 @@
   @include base-list;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 24px;
+  row-gap: 20px;
   counter-reset: application__list 0;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 280px);
-    gap: 56px 37px;
+    gap: 37px 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,6 +60,10 @@
     padding-top: 40px;
     padding-bottom: 57px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 250px;
+  }
 }
 
 .application__item::after {
@@ -83,14 +87,20 @@
 }
 
 .application__image-leaf {
+  position: relative;
+  display: block;
+  width: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+
   &::before {
     display: block;
     content: "";
     width: 60px;
     height: 60px;
-    background-image: url("../../icons/stack.svg#icon-leaf-mobile");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: $basic-green;
     background-size: 60px 60px;
 
     @media (min-width: $tablet-width) {
@@ -98,18 +108,39 @@
       height: 80px;
       background-size: 80px 80px;
     }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 28px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../icons/stack.svg#icon-leaf-mobile");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 28px;
   }
 }
 
 .application__image-drink {
+  position: relative;
+  display: block;
+  width: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+
   &::before {
     display: block;
     content: "";
     width: 60px;
     height: 60px;
-    background-image: url("../../icons/stack.svg#icon-drink-mobile");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: $basic-green;
     background-size: 60px 60px;
 
     @media (min-width: $tablet-width) {
@@ -117,18 +148,39 @@
       height: 80px;
       background-size: 80px 80px;
     }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 28px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../icons/stack.svg#icon-drink-mobile");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 28px;
   }
 }
 
 .application__image-eat {
+  position: relative;
+  display: block;
+  width: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+
   &::before {
     display: block;
     content: "";
     width: 60px;
     height: 60px;
-    background-image: url("../../icons/stack.svg#icon-eat-mobile");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: $basic-green;
     background-size: 60px 60px;
 
     @media (min-width: $tablet-width) {
@@ -137,17 +189,38 @@
       background-size: 80px 80px;
     }
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 28px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../icons/stack.svg#icon-eat-mobile");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 28px;
+  }
 }
 
 .application__image-watch {
+  position: relative;
+  display: block;
+  width: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+
   &::before {
     display: block;
     content: "";
     width: 60px;
     height: 60px;
-    background-image: url("../../icons/stack.svg#icon-watch-mobile");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: $basic-green;
     background-size: 60px 60px;
 
     @media (min-width: $tablet-width) {
@@ -155,6 +228,21 @@
       height: 80px;
       background-size: 80px 80px;
     }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 28px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../icons/stack.svg#icon-watch-mobile");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 28px;
   }
 }
 
@@ -162,8 +250,15 @@
   max-width: 200px;
   margin: 0;
   padding: 0;
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     max-width: 245px;
+  }
+}
+
+.application__item-text span {
+  @media (min-width: $tablet-width) {
+    margin: 0 6px 0 0;
   }
 }

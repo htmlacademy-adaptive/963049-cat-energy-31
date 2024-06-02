@@ -1,37 +1,30 @@
 .products-slim {
-  display: grid;
-  grid-template-columns: 82px 145px;
-  grid-template-rows: 50px 1fr 30px;
-  row-gap: 22px;
-  margin: 0;
-  padding: 21px 20px 18px;
+  padding: 23px 20px 16px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 340px 1fr;
-    grid-template-rows: 50px 1fr 30px;
-    padding: 77px 33px 53px 52px;
+    padding: 50px 63px 56px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 168px 1fr;
-    grid-template-rows: 106px 1fr 38px;
-    row-gap: 37px;
-    padding: 41px 61px 55px 52px;
+    padding: 46px 65px 40px 51px;
   }
 
   &::before {
+    position: relative;
     display: block;
     content: "";
     width: 50px;
-    height: 50px;
+    height: 52px;
     background-image: url("../../icons/stack.svg#logo-cat-slim-mobile");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50px 50px;
+    background-size: 50px 52px;
 
     @media (min-width: $tablet-width) {
       grid-column: 2 / 4;
       grid-row: 1 / 4;
+      top: 31px;
+      left: 27px;
       width: 200px;
       height: 211px;
       margin: 0 auto;
@@ -41,75 +34,12 @@
     @media (min-width: $desktop-width) {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
+      top: -6px;
+      left: 1px;
       width: 100px;
       height: 106px;
       margin: 0;
       background-size: 100px 106px;
     }
   }
-}
-
-.products-slim__title {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.products-slim__text {
-  grid-column: 1 / 4;
-  grid-row: 2 / 3;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 23px;
-  border-bottom: 1px solid $basic-medium-grey;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    padding-bottom: 0;
-    border-bottom: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-  }
-}
-
-.products-slim__link {
-  position: relative;
-  grid-row: 3 / 4;
-  grid-column: 1 / 4;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
-  }
-}
-
-.products-slim__link-image {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 20px;
-  height: 10px;
-  top: 35%;
-  left: 95px;
-  transform: translateY(-50%);
-  transition: width 0.5s ease, transform 0.5s ease;
-  background-color: $basic-black;
-  mask-image: url("../../icons/stack.svg#icon-arrow-mobile");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: 24px 10px;
-  overflow: hidden;
-
-  @media (min-width: $tablet-width) {
-    top: 50%;
-    left: 125px;
-  }
-}
-
-.products-slim__link:hover .products-slim__link-image {
-  transform: translate(8px, -50%);
 }

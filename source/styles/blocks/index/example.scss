@@ -4,14 +4,15 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
+    padding-top: 43px;
     padding-bottom: 101px;
-    background-image: linear-gradient(180deg, $basic-white 617px, $basic-grey 462px);
+    background-image: linear-gradient(180deg, $basic-white 619px, $basic-grey 462px);
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
-    background-image: linear-gradient(to bottom, $basic-white 140px, $basic-grey 142px);
+    padding-bottom: 76px;
+    background-image: linear-gradient(to bottom, $basic-white 137px, $basic-grey 135px);
   }
 }
 
@@ -53,13 +54,23 @@
     margin: 0 auto;
     margin-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.example__text span {
+  @media (min-width: $desktop-width) {
+    margin-right: 5px;
+  }
 }
 
 .example__values {
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 99px;
+    margin-bottom: 106px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,7 +101,11 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient($basic-white 140px, $basic-grey 140px);
+    background-image: linear-gradient($basic-white 151px, $basic-grey 140px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient($basic-white 137px, $basic-grey 137px);
   }
 }
 
@@ -101,9 +116,14 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient($basic-white 140px, $basic-grey 140px);
+    background-image: linear-gradient($basic-white 151px, $basic-grey 140px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient($basic-white 137px, $basic-grey 137px);
   }
 }
+
 
 .example__image-before,
 .example__image-after {

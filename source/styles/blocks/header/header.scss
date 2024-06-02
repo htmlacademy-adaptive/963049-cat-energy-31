@@ -6,8 +6,12 @@
   max-width: 767px;
 
   @media (min-width: $tablet-width) {
-    gap: 13px;
+    gap: 22px;
   }
+}
+
+.header-logo__logo-title-image {
+  margin-left: -10px;
 }
 
 .header-logo__logo-image,

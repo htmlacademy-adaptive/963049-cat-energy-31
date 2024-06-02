@@ -67,6 +67,10 @@
             <p class="hero__text">Занялся собой? Займись котом!</p>
             <div class="hero__image-wrap">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)" width="552" height="499" srcset="images/hero-image-desctop@1x.webp 1x, images/hero-image-desctop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" width="709" height="609" srcset="images/hero-image-tablet@1x.webp 1x, images/hero-image-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="images/hero-image-mobile@1x.webp 1x, images/hero-image-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1300px)" width="552" height="499" type="image/png" srcset="images/hero-image-desctop@1x.png 1x, images/hero-image-desctop@2x.png 2x">
                 <source media="(min-width: 768px)" width="709" height="609" type="image/png"  srcset="images/hero-image-tablet@1x.png 1x,images/hero-image-tablet@2x.png 2x">
                 <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Изображение мобильной версии продукта 'Кэт энерджи'">
@@ -86,20 +90,22 @@
             <li class="programs__products-item products-cards">
               <article class="products-cards__slim products-slim">
                 <span class="visually-hidden">Логотип продуктов для похудения</span>
-                <h3 class="products-slim__title products-cards__title">Похудение</h3>
-                <p class="products-slim__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <a class="products-slim__link products-cards__link" href="#">Каталог slim
-                  <span class="products-slim__link-image"></span>
+                <h3 class="products-cards__title">Похудение</h3>
+                <p class="products-cards__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                <a class="products-cards__link" href="#">
+                  <p class="products-cards__link-text">Каталог slim</p>
+                  <span class="products-cards__link-image"></span>
                 </a>
               </article>
             </li>
             <li class="programs__product-item products-cards">
               <article class="products-cards__pro products-pro">
                 <span class="visually-hidden">Логотип продуктов для набора массы</span>
-                <h3 class="products-pro__title products-cards__title">Набор массы</h3>
-                <p class="products-pro__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                <a class="products-pro__link products-cards__link" href="#">Каталог pro
-                  <span class="products-pro__link-image"></span>
+                <h3 class="products-cards__title">Набор массы</h3>
+                <p class="products-cards__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <a class="products-cards__link" href="#">
+                  <p class="products-cards__link-text">Каталог pro</p>
+                  <span class="products-cards__link-image"></span>
                 </a>
               </article>
             </li>
@@ -113,27 +119,31 @@
         <h2 class="application__title">Как это работает</h2>
         <div class="application__list-wrap">
           <ul class="application__list">
-            <li class="application__item application__image-leaf">
+            <li class="application__item">
+              <span class="application__image-leaf"></span>
               <span class="visually-hidden">Изображение листка растения</span>
               <p class="application__item-text">Функциональное питание
                 содержит только полезные
                 питательные вещества.</p>
             </li>
-            <li class="application__item application__image-drink">
+            <li class="application__item">
+              <span class="application__image-drink"></span>
               <span class="visually-hidden">Изображение жидкой пищи</span>
               <p class="application__item-text">Выпускается в виде порошка,
                 который нужно лишь залить
                 кипятком и готово.</p>
             </li>
-            <li class="application__item application__image-eat">
+            <li class="application__item">
+              <span class="application__image-eat"></span>
               <span class="visually-hidden">Изображение столовых приборы</span>
               <p class="application__item-text">Замените один-два приема
                 обычной еды на наше
                 функциональное питание.</p>
             </li>
-            <li class="application__item application__image-watch">
+            <li class="application__item">
+              <span class="application__image-watch"></span>
               <span class="visually-hidden">Изображение часов</span>
-              <p class="application__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="application__item-text">Уже через месяц наслаждайтесь изменениями к <span>лучшему</span> вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -146,7 +156,7 @@
           <div class="example__content-wrap">
             <div class="example__description-wrap">
               <h2 class="example__title">Живой пример</h2>
-              <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный <span>результат</span> без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             </div>
             <div class="example__values values">
               <dl class="values__list">
@@ -168,12 +178,18 @@
           <div class="example__image-wrap">
             <div class="example__image-cat example__image-cat-before">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" width="560" height="512" srcset="images/cat-divider-tablet-after@1x.webp 1x, images/cat-divider-tablet-after@2x.webp 2x">
+                <source type="image/webp" srcset="images/cat-divider-mobile-after@1x.webp 1x, images/cat-divider-mobile-after@2x.webp 2x">
+
                 <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-divider-tablet-after@1x.png 1x, images/cat-divider-tablet-after@2x.png 2x">
                 <img class="example__image-after" src="images/cat-divider-mobile-after@1x.png" srcset="images/cat-divider-mobile-after@2x.png 2x" width="280" height="256" alt="Изображение кота после использования программы 'Кэт энерджи'">
               </picture>
             </div>
             <div class="example__image-cat example__image-cat-after">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" width="560" height="512" srcset="images/cat-divider-mobile-before@1x.webp 1x, images/cat-divider-mobile-before@2x.webp 2x">
+                <source type="image/webp" srcset="images/cat-divider-mobile-before@1x.webp 1x, images/cat-divider-mobile-before@2x.webp 2x">
+
                 <source media="(min-width: 768px)" width="560" height="512" type="image/png"  srcset="images/cat-divider-tablet-before@1x.png 1x, images/cat-divider-tablet-before@2x.png 2x">
                 <img class="example__image-before" src="images/cat-divider-mobile-before@1x.png" srcset="images/cat-divider-mobile-before@2x.png 2x" width="280" height="256" alt="Изображение кота до использования программы 'Кэт энерджи'">
               </picture>
@@ -193,7 +209,7 @@
     <div class="main-footer__wrap">
       <div class="main-footer__location location location--index-bg">
         <div class="location__address-wrap container">
-          <p class="location__invite-text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="location__invite-text">Приглашаем<br> к сотрудничеству дилеров!</p>
           <address class="location__address">
             <p class="location__address-text">ул. Большая Конюшенная, д. 19/8</p>
             <p class="location__address-text location__address-city">Санкт-Петербург</p>

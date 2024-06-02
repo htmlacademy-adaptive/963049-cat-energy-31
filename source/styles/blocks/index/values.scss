@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 167px;
+    gap: 172px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +21,7 @@
   gap: 32px;
   max-width: 280px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 31px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -32,30 +32,37 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 }
 
 .values__weight-wrap,
 .values__time-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 15px 21px 18px;
+  border: 1px solid $basic-normal-grey;
+  border-radius: 3px;
+
   @media (min-width: $tablet-width) {
     min-width: 162px;
+    padding: 15px 8px 28px;
   }
 }
 
 .values__weight,
 .values__time {
+  position: relative;
+  z-index: 1;
   max-width: 124px;
   margin: 0;
-  padding: 15px 25px 28px 22px;
   font-family: $title-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
   color: $basic-black;
-  border: 1px solid $basic-normal-grey;
-  border-radius: 3px;
   white-space: nowrap;
 
   @media (min-width: $tablet-width) {
@@ -67,7 +74,11 @@
 
 .values__weight-text,
 .values__time-text {
-  margin: -12px 15px 0;
+  position: relative;
+  top: 19px;
+  z-index: 3;
+  max-width: 80px;
+  margin: -12px 0;
   padding: 0 10px;
   font-size: 12px;
   line-height: 12px;
@@ -75,8 +86,8 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    margin: -9px 15px 0;
-    padding: 0 3px;
+    top: 23px;
+    padding: 0;
     font-size: 14px;
     line-height: 14px;
     background-color: $basic-white;
@@ -87,6 +98,18 @@
   }
 }
 
+.values__weight-text {
+  @media (min-width: $tablet-width) {
+    min-width: 125px;
+  }
+}
+
+.values__time-text {
+  @media (min-width: $tablet-width) {
+    min-width: 145px;
+  }
+}
+
 .values__costs-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -94,14 +117,16 @@
   gap: 2px;
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: end;
+    gap: 8px;
     max-width: 174px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: flex-start;
-    gap: 63px;
+    gap: 66px;
     max-width: 500px;
     margin-right: 40px;
   }

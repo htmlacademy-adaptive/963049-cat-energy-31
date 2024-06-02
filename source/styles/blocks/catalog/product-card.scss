@@ -1,6 +1,6 @@
 .product-card__wrap {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -11,26 +11,35 @@
 }
 
 .product-card__content-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 17px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: column;
-    margin-bottom: 32px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 169px;
+    margin-bottom: 37px;
   }
 }
 
 .product-card__image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 200px;
     height: 210px;
     margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
   }
 }
 
@@ -43,6 +52,10 @@
   @media (min-width: $tablet-width) {
     gap: 7px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 6px;
+  }
 }
 
 .product-card__content-text-wrap {
@@ -53,6 +66,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 3px;
     border-bottom: 1px solid $basic-normal-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
   }
 }
 
@@ -87,6 +104,10 @@
   @media (min-width: $tablet-width) {
     max-width: 135px;
     margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
   }
 }
 
@@ -133,8 +154,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     margin-top: 80px;
@@ -177,6 +198,10 @@
       margin-bottom: 50px;
       mask-size: 60px 60px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 41px;
+    }
   }
 }
 
@@ -186,7 +211,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 170px;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
     text-align: center;
   }
 }
@@ -197,8 +222,12 @@
 
   @media (min-width: $tablet-width) {
     max-width: 170px;
-    margin-bottom: 75px;
+    margin-bottom: 80px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 89px;
   }
 }
 

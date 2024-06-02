@@ -27,7 +27,10 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 23px 27px;
+    gap: 23px;
+    padding: 0 27px;
+    padding-top: 27px;
+    padding-bottom: 31px;
     border: 1px solid $basic-soft-grey;
   }
 
@@ -71,14 +74,18 @@
   border-radius: 50%;
   border: 1px solid $basic-normal-grey;
 
-  &:hover {
-    border-color: $basic-grey-c;
-  }
-
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
   }
+}
+
+.radio__input:hover + .radio__mark {
+  border-color: $basic-grey-c;
+}
+
+.radio__input:focus + .radio__mark {
+  border-color: $basic-medium-dark-grey;
 }
 
 .radio__input[type="radio"]:checked + .radio__mark::before {

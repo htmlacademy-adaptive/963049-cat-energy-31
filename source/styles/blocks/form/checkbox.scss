@@ -5,7 +5,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 284px);
     grid-template-rows: 112px 54px;
-    gap: 52px 60px;
+    gap: 47px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,10 +17,10 @@
 
 .checkbox__title {
   position: relative;
-  max-width: 181px;
+  max-width: 160px;
   margin: 0;
-  margin-bottom: 34px;
-  padding-right: 40px;
+  margin-bottom: 38px;
+  padding-right: 20px;
   font-family: $title-font;
   font-size: 24px;
   line-height: 26px;
@@ -31,18 +31,14 @@
     max-width: 291px;
     margin-left: -40px;
     padding-left: 40px;
-    margin-bottom: 57px;
+    margin-bottom: 62px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / 3;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40px;
-    gap: 82px;
-    margin: 0;
     margin-bottom: 57px;
+    margin-left: -40px;
   }
 }
 
@@ -51,7 +47,7 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 25px;
-  margin-bottom: 34px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
@@ -62,7 +58,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-rows: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 76px;
+    align-items: center;
+    margin: 0;
   }
 }
 
@@ -83,6 +83,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    padding-left: 60px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -100,13 +101,22 @@
   background-color: $basic-white;
   border: 1px solid $basic-normal-grey;
 
-  &:hover {
-    border-color: $basic-grey-c;
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
+    top: -5px;
   }
+}
+
+.checkbox__input:hover + .checkbox__mark {
+  border-color: $basic-grey-c;
+}
+
+.checkbox__input:focus + .checkbox__mark {
+  border-color: $basic-medium-dark-grey;
 }
 
 .checkbox__input[type="checkbox"]:checked + .checkbox__mark::before {
@@ -122,6 +132,12 @@
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: 18px 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    height: 26px;
+    mask-size: 26px 26px;
+  }
 }
 
 .checkbox__input:disabled ~ .checkbox__label-text {
@@ -162,7 +178,15 @@
 .checkbox__button-footnote .footnote {
   display: block;
   margin: 0;
+  font-size: 14px;
   line-height: 16px;
   text-align: center;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -3px;
+    left: -2px;
+    font-size: 16px;
+  }
 }

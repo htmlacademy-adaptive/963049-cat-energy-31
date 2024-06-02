@@ -6,7 +6,7 @@
   min-width: 280px;
 
   @media (min-width: $tablet-width) {
-    min-width: 168px;
+    min-width: 163px;
   }
 }
 
@@ -17,6 +17,7 @@
 .copyright__text {
   margin: 0;
   padding: 0;
+  padding-top: 3px;
   font-size: 16px;
   line-height: 20px;
   color: $basic-medium-dark-grey;
@@ -35,6 +36,7 @@
     left: 50%;
     width: 27px;
     height: 34px;
+    padding-top: 2px;
     background-color: $basic-average-dark-grey;
     mask-image: url("../../icons/stack.svg#icon-html-academy-footer-mobile");
     mask-repeat: no-repeat;

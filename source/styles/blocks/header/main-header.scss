@@ -1,12 +1,13 @@
 /* main-header */
 .main-header__wrap {
+  position: relative;
   display: flex;
   flex-direction: column;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     padding: 0 30px;
   }
 
@@ -16,13 +17,14 @@
 }
 
 .main-header__logo-wrap {
-  max-width: 1440px;
   padding: 0 20px;
-  padding-top: 13px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,4 +34,12 @@
 
 .main-header__nav {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    left: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -2px;
+  }
 }

@@ -1,9 +1,9 @@
 .user-contacts__title {
   position: relative;
-  max-width: 227px;
+  max-width: 207px;
   margin: 0;
   margin-bottom: 35px;
-  padding-right: 40px;
+  padding-right: 20px;
   font-family: $title-font;
   font-size: 24px;
   line-height: 26px;
@@ -11,22 +11,26 @@
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    max-width: 650px;
+    max-width: 590px;
     margin-left: -40px;
     margin-bottom: 76px;
     padding-left: 40px;
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .user-contacts__fields-wrap {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 14px;
+  gap: 11px;
 
   @media (min-width: $tablet-width) {
-    gap: 20px;
+    gap: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,16 +40,17 @@
 }
 
 .user-contacts__field {
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 13px;
   margin: 0;
   padding: 0;
 }
 
 .user-contacts__label {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13px;
   font-family: $title-font;
   font-size: 16px;
   text-transform: uppercase;
@@ -55,6 +60,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.user-contacts__label-text {
+  display: inline-block;
 }
 
 .user-contacts__input {
@@ -77,6 +86,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 11px 40px 11px 20px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -87,7 +97,7 @@
     position: absolute;
     content: "";
     top: 50%;
-    right: 12px;
+    right: 4px;
     width: 18px;
     height: 15px;
     transform: translate(-50%, -50%);
@@ -98,14 +108,10 @@
     mask-size: 18px 15px;
     cursor: pointer;
   }
+}
 
-  &:hover::after {
-    background-color: $basic-green;
-  }
-
-  @media (min-width: $tablet-width) {
-    right: 16px;
-  }
+.user-contacts__input:focus + .user-contacts__icon-email::after {
+  background-color: $basic-green;
 }
 
 .user-contacts__input[id="email"]:invalid:not(:placeholder-shown) + .user-contacts__icon-email::after {
@@ -117,7 +123,7 @@
     position: absolute;
     content: "";
     top: 50%;
-    right: 15px;
+    right: 6px;
     width: 16px;
     height: 16px;
     transform: translate(-50%, -50%);
@@ -129,7 +135,7 @@
     cursor: pointer;
   }
 
-  &:hover::after {
+  &:focus::after {
     background-color: $basic-green;
   }
 }

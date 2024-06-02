@@ -1,6 +1,6 @@
 .contacts {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
   gap: 20px;
   padding-top: 40px;
@@ -8,10 +8,15 @@
   background-color: $basic-light-grey;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
-    padding-top: 55px;
+    padding-top: 58px;
     padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 68px;
   }
 }
 
@@ -19,6 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0;
   padding: 0;

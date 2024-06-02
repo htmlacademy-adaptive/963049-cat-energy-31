@@ -123,14 +123,16 @@
               <h3 class="user-contacts__title">Контактные данные (владельца кота)</h3>
               <div class="user-contacts__fields-wrap">
                 <p class="user-contacts__field">
-                  <label class="user-contacts__label user-contacts__icon-email" for="email">E-mail:*</label>
-                  <input class="user-contacts__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                  <span class="visually-hidden">Иконка почтовый конверт</span>
+                  <label class="user-contacts__label" for="email">
+                    <span class="user-contacts__label-text user-contacts__icon-email">E-mail:*</span>
+                    <input class="user-contacts__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                  </label>
                 </p>
                 <p class="user-contacts__field">
-                  <label class="user-contacts__label user-contacts__icon-phone" for="phone">Телефон:*</label>
-                  <input class="user-contacts__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
-                  <span class="visually-hidden">Иконка телефонная трубка</span>
+                  <label class="user-contacts__label user-contacts__icon-phone" for="phone">
+                    <span class="user-contacts__label-text">Телефон:*</span>
+                    <input class="user-contacts__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+                  </label>
                 </p>
               </div>
             </div>
@@ -202,7 +204,7 @@
     <div class="main-footer__wrap">
       <div class="main-footer__location location">
         <div class="location__address-wrap container">
-          <p class="location__invite-text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="location__invite-text">Приглашаем<br> к сотрудничеству дилеров!</p>
           <address class="location__address">
             <p class="location__address-text">ул. Большая Конюшенная, д. 19/8</p>
             <p class="location__address-text location__address-city">Санкт-Петербург</p>
