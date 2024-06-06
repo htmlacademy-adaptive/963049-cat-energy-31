@@ -16,12 +16,12 @@
       background-color: $basic-white;
     }
 
-    &--nojs .nav_nav__wrapper {
-      position: static;
+    &--no-js .nav__wrapper {
+      position: relative;
       min-height: 0;
     }
 
-    &--nojs .nav__list {
+    &--no-js .nav__list {
       display: flex;
     }
   }
@@ -47,6 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 480px;
     padding-top: 71px;
   }
 }

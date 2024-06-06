@@ -108,10 +108,10 @@
     mask-size: 18px 15px;
     cursor: pointer;
   }
-}
 
-.user-contacts__input:focus + .user-contacts__icon-email::after {
-  background-color: $basic-green;
+  &:focus::after {
+    background-color: $basic-green;
+  }
 }
 
 .user-contacts__input[id="email"]:invalid:not(:placeholder-shown) + .user-contacts__icon-email::after {
