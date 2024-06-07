@@ -92,50 +92,42 @@
   }
 }
 
-.user-contacts__icon-email {
-  &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    right: 4px;
-    width: 18px;
-    height: 15px;
-    transform: translate(-50%, -50%);
-    background-color: $basic-black;
-    mask-image: url("../../icons/stack.svg#icon-email");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: 18px 15px;
-    cursor: pointer;
-  }
-
-  &:focus::after {
-    background-color: $basic-green;
-  }
-}
-
-.user-contacts__input[id="email"]:invalid:not(:placeholder-shown) + .user-contacts__icon-email::after {
+.user-contacts__input[id="email"]:invalid:not(:placeholder-shown) + .user-contacts__icon-email,
+.user-contacts__input[id="email"]:invalid:not(:placeholder-shown) + .user-contacts__icon-phone {
   background-color: $basic-red;
 }
 
-.user-contacts__icon-phone {
-  &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    right: 6px;
-    width: 16px;
-    height: 16px;
-    transform: translate(-50%, -50%);
-    background-color: $basic-black;
-    mask-image: url("../../icons/stack.svg#icon-phone");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: 16px 16px;
-    cursor: pointer;
-  }
+.user-contacts__icon-email {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  width: 18px;
+  height: 15px;
+  transform: translate(-50%, -50%);
+  background-color: $basic-black;
+  mask-image: url("../../icons/stack.svg#icon-email");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 18px 15px;
+  cursor: pointer;
+}
 
-  &:focus::after {
-    background-color: $basic-green;
-  }
+.user-contacts__icon-phone {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+  background-color: $basic-black;
+  mask-image: url("../../icons/stack.svg#icon-phone");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 16px 16px;
+  cursor: pointer;
+}
+
+.user-contacts__input:focus + .user-contacts__icon-email,
+.user-contacts__input:focus + .user-contacts__icon-phone {
+  background-color: $basic-red;
 }

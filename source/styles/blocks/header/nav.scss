@@ -17,7 +17,7 @@
     }
 
     &--no-js .nav__wrapper {
-      position: relative;
+      position: static;
       min-height: 0;
     }
 
