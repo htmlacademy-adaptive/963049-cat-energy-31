@@ -255,6 +255,10 @@
   @media (min-width: $tablet-width) {
     max-width: 245px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .application__item-text span {
