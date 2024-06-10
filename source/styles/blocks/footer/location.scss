@@ -1,12 +1,21 @@
 .location {
   position: relative;
-
-  &--index-bg {
-    background-color: $basic-white;
-  }
+  min-height: 400px;
+  z-index: 2;
 }
 
 .location__address-wrap {
+  @media (min-width: $tablet-width) {
+    padding: 34px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 95px 0;
+  }
+}
+
+.location__address-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,18 +23,14 @@
   padding-top: 26px;
   padding-bottom: 26px;
 
-  @media (min-width: $tablet-width) {
-    padding: 60px 70px;
-  }
-
   @media (min-width: $desktop-width) {
-    position: absolute;
-    gap: 84px;
-    top: 95px;
+    position: relative;
     left: 110px;
-    max-width: 570px;
+    max-width: 566px;
+    margin: 0;
     padding: 61px 76px 59px 79px;
     background-color: $basic-white;
+    z-index: 3;
   }
 }
 
@@ -95,6 +100,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    height: 100%;
     min-height: 400px;
     background-color: $basic-grey;
     background-image: url("../../../images/location-map-tablet@2x.jpg");
@@ -106,6 +112,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    min-height: 400px;
+    top: 0;
+    left: 0;
+    z-index: 1;
     background-image: url("../../../images/location-map-desktop@2x.jpg");
     background-size: 1440px 400px;
 
@@ -121,5 +132,9 @@
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
   }
 }

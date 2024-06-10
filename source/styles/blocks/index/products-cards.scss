@@ -8,11 +8,10 @@
   grid-template-columns: 70px 1fr;
   row-gap: 22px;
   margin: 0;
-  background-color: $basic-light-grey;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 340px 1fr;
-    row-gap: 9px;
+    row-gap: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,7 +54,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-    margin-top: 1px;
+    margin-top: -2px;
     padding-bottom: 0;
     border-bottom: none;
   }
