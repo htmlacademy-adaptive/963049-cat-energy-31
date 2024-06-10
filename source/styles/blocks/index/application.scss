@@ -1,6 +1,10 @@
 .application__list-wrap {
   margin-bottom: 49px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
   }
@@ -254,6 +258,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 245px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
